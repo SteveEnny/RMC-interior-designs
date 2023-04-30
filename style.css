@@ -442,8 +442,8 @@ body {
 	max-width: 1200px;
 	/* height: 250px; */
 	margin: 0 calc(-20vw + 15%);
-	border: 1px solid green;
-	overflow-x: scroll;
+	/* border: 1px solid green; */
+	/* overflow-x: scroll; */
 }
 
 .img-list img {
