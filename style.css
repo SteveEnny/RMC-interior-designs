@@ -593,13 +593,13 @@ body {
 		width: calc(100vw - 1rem);
 		padding: 0;
 		margin: 0 auto;
-		border: 1px solid green;
+		/* border: 1px solid green; */
 		/* overflow: hidden; */
 	}
 
 	.inner-container {
 		width: 350px;
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 		margin: 0 auto;
 		margin-top: 3rem;
 
@@ -678,8 +678,23 @@ body {
 		transform: translateY(-20%);
 	}
 
+	.digital-img {
+		width: 300px;
+		margin: 0 2rem;
+		align-self: center;
+	}
 	.project-size {
 		width: 400px;
+	}
+
+	.digital .heading-6 {
+		font-size: 1.3rem;
+		margin-left: 2rem;
+		max-width: 20rem;
+	}
+
+	.digital-review {
+		text-align: center;
 	}
 
 	.project-collection {
