@@ -9,7 +9,7 @@ body {
 *::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 
 :root {
@@ -264,9 +264,7 @@ body {
 }
 
 .img-container {
-	/* border: 1px solid green; */
 	max-width: 250px;
-	/* height: calc(350px - 5v%); */
 }
 
 .project-collection {
@@ -589,29 +587,97 @@ body {
 }
 
 /* Media query */
-@media (max-width: 767px) {
-	/* .container {
-		width: 435px;
-	} */
-	/* .inner-container {
-		overflow: scroll;
-	} */
-	.design-img {
-		width: 100vw;
-		margin: 1rem calc(-50vw + 50%);
-	}
-
+@media (max-width: 450px) {
 	.container {
-		overflow: hidden;
+		max-width: 450px;
+		width: calc(100vw - 1rem);
+		padding: 0;
+		margin: 0 auto;
+		border: 1px solid green;
+		/* overflow: hidden; */
 	}
 
 	.inner-container {
-		max-width: 600px;
+		width: 350px;
+		border: 1px solid blue;
 		margin: 0 auto;
 		margin-top: 3rem;
-		padding: 2rem;
+
 		overflow: hidden;
 	}
+
+	.heading-1 {
+		font-size: 40px;
+	}
+
+	.heading-2 {
+		font-size: 30px;
+	}
+
+	.heading-6 {
+		font-size: 15px;
+	}
+
+	.primary-lead {
+		font-size: 10px;
+		margin-bottom: 0;
+	}
+
+	.paragrapgh-text {
+		font-size: 12px;
+		/* max-width: 10rem; */
+	}
+	.design-img {
+		width: 50vw;
+		margin: 1rem calc(-50vw + 50%);
+	}
+
+	.img-container {
+		width: 500px;
+		height: 270px;
+	}
+
+	.img-container img {
+		height: inherit;
+		object-fit: cover;
+	}
+
+	.about {
+		position: relative;
+		/* height: calc(100vw * 120rem); */
+		border: 1px solid turquoise;
+	}
+	.trans-up {
+		transform: translateY(0);
+	}
+
+	.service-animation {
+		transform: translateX(-22%);
+		width: 800px;
+		height: 400px;
+	}
+
+	.vertical-line {
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.review {
+		position: absolute;
+		top: calc(20rem - 20%);
+	}
+
+	.about .img-container {
+		display: inline-block;
+		width: 170px;
+		height: 200px;
+		margin-top: 2rem;
+	}
+
+	.trans {
+		transform: translateY(-20%);
+	}
+
 	.project-size {
 		width: 400px;
 	}
@@ -621,8 +687,20 @@ body {
 		height: 200px;
 	}
 
-	.heading-2 {
-		font-size: 1rem;
+	.project .nav-link {
+		margin: 1rem;
+		font-size: 0.8rem;
+	}
+
+	.project .row {
+		gap: 0;
+		margin: 0;
+	}
+	.project .img-container {
+		width: 170px;
+		object-fit: cover;
+		padding: 0;
+		margin: 0;
 	}
 
 	.services {
@@ -646,10 +724,10 @@ body {
 		width: 100%;
 	}
 
-	.img-collection {
+	/* .img-collection {
 		width: 190px;
 		height: 250px;
-	}
+	} */
 
 	.review {
 		margin-top: 6rem;
